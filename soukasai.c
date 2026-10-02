@@ -8,7 +8,7 @@ int GetRandom(int arg_min,int arg_max);
 int main(void){
 
     int ran;
-	int ar,ag,ab,qr,qg,qb;
+	int r,g,b;
 
     srand((unsigned int)time(NULL));
     ran = GetRandom(1,6);
@@ -30,18 +30,18 @@ int main(void){
     printf("\x1b[m\nこの色を作ろう!\n");
 
 	printf("赤の輝度値を入力-->");
-	scanf("%d",&ar);
+	scanf("%d",&r);
 	printf("緑の輝度値を入力-->");
-	scanf("%d",&ag);
+	scanf("%d",&g);
 	printf("青の輝度値を入力-->");
-	scanf("%d",&ab);
+	scanf("%d",&b);
 
-    ar = ar * 2.55;
-    ag = ag * 2.55;
-    ab = ab * 2.55;
+    r = r * 2.55;
+    g = g * 2.55;
+    b = b * 2.55;
 
-	printf("君の入力した色\x1b[49m \x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",ar,ag,ab,ar,ag,ab);
-    
+	printf("君の入力した色\x1b[49m \x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",r,g,b,r,g,b);
+
 	return(0);
  
 }
