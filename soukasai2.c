@@ -77,14 +77,14 @@ int main(void){
         qg[i] = qg[i] * 2.55;
         qb[i] = qb[i] * 2.55;
 
-        printf("\x1b[m\nこの色を作ろう!");
-        printf("\x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m",qr[i],qg[i],qb[i],qr[i],qg[i],qb[i]);
+        printf("\x1b[mこの色を作ろう! : ");
+        printf("\x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[i],qg[i],qb[i],qr[i],qg[i],qb[i]);
 
-        printf("赤の輝度値を入力-->");
+        printf("赤の輝度値を入力--> ");
 	    scanf("%d",&ar[i]);
-	    printf("緑の輝度値を入力-->");
+	    printf("緑の輝度値を入力--> ");
 	    scanf("%d",&ag[i]);
-	    printf("青の輝度値を入力-->");
+	    printf("青の輝度値を入力--> ");
 	    scanf("%d",&ab[i]);
 
         ar[i] = ar[i] * 2.55;
@@ -95,7 +95,8 @@ int main(void){
     }
 
     for( i=0 ; i<n ; i++ ){
-        printf("君の入力した色%d\x1b[49m \x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",i+1,ar[i],ag[i],ab[i],ar[i],ag[i],ab[i]);
+        printf("君の入力した色 %d : ", i+1);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm\x1b[38;2;%d;%d;%dm　　　　　　\x1b[m\n",ar[i],ag[i],ab[i],ar[i],ag[i],ab[i]);
     }
     
 	return(0);
