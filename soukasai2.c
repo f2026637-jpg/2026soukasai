@@ -15,14 +15,38 @@ int main(void){
     ran = GetRandom(1,10);
 
     if(ran == 1){
+        n = 2;
+        qr[0] = 64;
+        qg[0] = 38;
+        qb[0] = 15;
+        qr[1] = 73;
+        qg[1] = 54;
+        qb[1] = 29;
+
+        qr[0] = qr[0] * 2.55;
+        qg[0] = qg[0] * 2.55;
+        qb[0] = qb[0] * 2.55;
+        qr[1] = qr[1] * 2.55;
+        qg[1] = qg[1] * 2.55;
+        qb[1] = qb[1] * 2.55;
+        printf("　　　　　　　　　　　　　　　　\n");
+        printf("　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[m　　　　\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
+        printf("　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[m　　\n",qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[m\n",qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
+        printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
+        printf("\x1b[48;2;%d;%d;%dm　　　　\x1b[m　　　　　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[m\n",qr[1],qg[1],qb[1],qr[1],qg[1],qb[1]);
+        printf("　　　　　　　　　　　　　　　　\n\n");
+        qr[0] = qr[0] / 2.55;
+        qg[0] = qg[0] / 2.55;
+        qb[0] = qb[0] / 2.55;
+        qr[1] = qr[1] / 2.55;
+        qg[1] = qg[1] / 2.55;
+        qb[1] = qb[1] / 2.55;
+    } else if(ran == 2){
         n = 1;
         qr[0] = 100;
         qg[0] = 0;
-        qb[0] = 0;
-    } else if(ran == 2){
-        n = 1;
-        qr[0] = 0;
-        qg[0] = 100;
         qb[0] = 0;
     } else if(ran == 3){
         n = 1;
