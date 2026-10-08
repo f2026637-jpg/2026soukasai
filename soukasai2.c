@@ -43,11 +43,12 @@ int main(void){
         qr[1] = qr[1] / 2.55;
         qg[1] = qg[1] / 2.55;
         qb[1] = qb[1] / 2.55;
-    } else if(ran == 2){
+
+     } else if(ran == 2){
         n = 1;
-        qr[0] = 100;
-        qg[0] = 0;
-        qb[0] = 0;
+        qr[0] = 0;
+        qg[0] = 100;
+        qb[0] = 0;   
     } else if(ran == 3){
         n = 1;
         qr[0] = 0;
