@@ -12,7 +12,7 @@ int main(void){
 	int ar[5],ag[5],ab[5],qr[5],qg[5],qb[5];
 
     srand((unsigned int)time(NULL));
-    ran = GetRandom(1,10);
+    ran = GetRandom(2,2);
 
     if(ran == 1){
         n = 1;
@@ -20,10 +20,32 @@ int main(void){
         qg[0] = 0;
         qb[0] = 0;
     } else if(ran == 2){
-        n = 1;
-        qr[0] = 0;
-        qg[0] = 100;
-        qb[0] = 0;
+        n = 2;
+        qr[0] = 64;
+        qg[0] = 38;
+        qb[0] = 15;
+        qr[1] = 89;
+        qg[1] = 65;
+        qb[1] = 45;
+        qr[0] = qr[0] * 2.55;
+        qg[0] = qg[0] * 2.55;
+        qb[0] = qb[0] * 2.55;
+        qr[1] = qr[1] * 2.55;
+        qg[1] = qg[1] * 2.55;
+        qb[1] = qb[1] * 2.55;
+        printf("　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0]);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　\x1b[m\n",qr[0],qg[0],qb[0],255,255,255,qr[0],qg[0],qb[0]);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　　　　　\x1b[m\n",qr[0],qg[0],qb[0]);
+        printf("\x1b[49m\x1b[48;2;%d;%d;%dm　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[49m\x1b[48;2;%d;%d;%dm　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
+        printf("　　\x1b[49m\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m　　\n\n",qr[1],qg[1],qb[1]);
+        qr[0] = qr[0] / 2.55;
+        qg[0] = qg[0] / 2.55;
+        qb[0] = qb[0] / 2.55;
+        qr[1] = qr[1] / 2.55;
+        qg[1] = qg[1] / 2.55;
+        qb[1] = qb[1] / 2.55;
     } else if(ran == 3){
         n = 1;
         qr[0] = 0;
