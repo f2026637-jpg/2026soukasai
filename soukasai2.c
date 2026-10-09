@@ -59,6 +59,7 @@ int main(void){
         printf("\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　\x1b[48;2;%d;%d;%dm　　　　\x1b[m\n",qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1],qr[0],qg[0],qb[0],qr[1],qg[1],qb[1]);
         printf("\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[48;2;%d;%d;%dm　　　　\x1b[m\n",qr[1],qg[1],qb[1],qr[2],qg[2],qb[2]);
         printf("　　\x1b[48;2;%d;%d;%dm　　　　　　　　　　　　\x1b[m\n",qr[2],qg[2],qb[2]);
+         printf("/n");
 
         qr[0] = qr[0] / 2.55;
         qg[0] = qg[0] / 2.55;
